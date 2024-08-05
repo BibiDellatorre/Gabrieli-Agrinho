@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Fertilizantes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de Fertilizantes Agrícolas</h2>
+        <form id="fertilizerForm">
+            <div class="form-group">
+                <label for="area">Área a ser fertilizada (em hectares):</label>
+                <input type="number" id="area" name="area" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="nitrogen">Quantidade de Nitrogênio (em kg por hectare):</label>
+                <input type="number" id="nitrogen" name="nitrogen" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="phosphorus">Quantidade de Fósforo (em kg por hectare):</label>
+                <input type="number" id="phosphorus" name="phosphorus" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="potassium">Quantidade de Potássio (em kg por hectare):</label>
+                <input type="number" id="potassium" name="potassium" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Calcular</button>
+            </div>
+        </form>
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
